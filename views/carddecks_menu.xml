@@ -1,0 +1,32 @@
+<odoo>
+    <!-- Card Decks Menu -->
+    <menuitem id = "menu_card_decks" name = "Card Decks" />
+    <record id="action_carddecks_card" model="ir.actions.act_window">
+        <field name="name">Cards</field>
+        <field name="res_model">carddecks.card</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_card"
+              name="Cards"
+              parent="menu_card_decks"
+              action="action_carddecks_card"/>
+    <record id="action_carddecks_category" model="ir.actions.act_window">
+        <field name="name">Categories</field>
+        <field name="res_model">carddecks.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_category"
+              name="Categories"
+              parent="menu_card_decks"
+              action="action_carddecks_category"/>
+    <record id="action_carddecks_deck" model="ir.actions.act_window">
+        <field name="name">Decks</field>
+        <field name="res_model">carddecks.deck</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_deck"
+              name="Decks"
+              parent="menu_card_decks"
+              action="action_carddecks_deck"/>
+
+</odoo>

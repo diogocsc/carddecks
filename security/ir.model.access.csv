@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_card_user,CardUser,model_carddecks_card,carddecks_group_user,1,1,1,0
+access_card_manager,CardManager,model_carddecks_card,carddecks_group_manager,1,1,1,1
+access_category_user,CategoryUser,model_carddecks_category,carddecks_group_user,1,1,1,0
+access_category_manager,CategoryManager,model_carddecks_category,carddecks_group_manager,1,1,1,1
+access_deck_user,DeckUser,model_carddecks_deck,carddecks_group_user,1,1,1,0
+access_deck_manager, DeckManager,model_carddecks_deck,carddecks_group_manager,1,1,1,1

@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_form_card" model="ir.ui.view">
+        <field name="name">Card Form</field>
+        <field name="model">carddecks.card</field>
+        <field name="arch" type="xml">
+            <form string="Card">
+                <group>
+                    <field name="cardText" />
+                    <field name="url" />
+                    <field name="source" />
+                    <field name="category" />
+                    <field name="deck" />
+                </group>
+            </form>
+        </field>
+    </record>
+    <record id="view_tree_card" model="ir.ui.view">
+        <field name="name">Card List</field>
+        <field name="model">carddecks.card</field>
+        <field name="arch" type="xml">
+            <tree string="Cards">
+                <field name="cardText" />
+                <field name="url" />
+                <field name="source" />
+                <field name="category" />
+                <field name="deck" />
+            </tree>
+        </field>
+    </record>
+</odoo>
