@@ -18,7 +18,9 @@ With this module you can configure decks of cards and play them
         'security/carddecks_security.xml',
         'security/ir.model.access.csv',
         'views/carddecks_menu.xml',
-        'views/card_view.xml'
+        'views/card_view.xml',
+        'views/category_view.xml',
+        'views/deck_view.xml',
     ],
     'demo': [],
     'installable': True,
