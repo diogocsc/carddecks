@@ -7,10 +7,10 @@ class Card(models.Model):
     _inherit = "carddecks.imageurl"
     _name = "carddecks.card"
     _description = "Card"
-    cardText = fields.Char("Card Text", required=True)
+    cardText = fields.Char("Card Text", required=True, translate=True)
     url = fields.Char("Card Image URL")
     image = fields.Binary(string="Image", store=True, attachment=False)
-    source = fields.Char("Card Source of Inspiration")
+    source = fields.Char("Card Source of Inspiration", translate=True)
     category = fields.Many2one("carddecks.category", "Category")
     deck = fields.Many2one("carddecks.deck", "Deck")
 

@@ -5,7 +5,7 @@ class Category(models.Model):
     _name = "carddecks.category"
     _description = "Category"
 
-    name = fields.Char("Category", required=True)
+    name = fields.Char("Category", required=True, translate=True)
     cards = fields.One2many("carddecks.card","category", "Cards")
 
 
