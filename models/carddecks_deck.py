@@ -8,6 +8,7 @@ class Deck(models.Model):
     name = fields.Char(required=True, translate=True)
     cards = fields.One2many("carddecks.card", "deck", "Cards")
     description = fields.Char(translate=True)
+    category = fields.Many2one('carddecks.category')
     total_cards = fields.Integer(compute="_compute_total_cards")
 
     def _compute_total_cards(self):

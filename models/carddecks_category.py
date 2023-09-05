@@ -6,7 +6,11 @@ class Category(models.Model):
     _description = "Category"
 
     name = fields.Char("Category", required=True, translate=True)
-    cards = fields.One2many("carddecks.card","category", "Cards")
+    cards = fields.One2many("carddecks.card", "category", "Cards")
+    category_type = fields.Selection([('card', 'Card Category'),
+                                      ('deck', 'Deck Category')],
+                                     default='card')
+
 
 
 

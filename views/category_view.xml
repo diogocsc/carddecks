@@ -6,6 +6,7 @@
             <form string="Category">
                 <group>
                     <field name="name" />
+                    <field name="category_type" />
                     <field name="cards" />
                 </group>
             </form>
@@ -17,6 +18,7 @@
         <field name="arch" type="xml">
             <tree string="Categories">
                 <field name="name" />
+                <field name="category_type" />
                 <field name="cards" />
             </tree>
         </field>

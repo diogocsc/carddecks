@@ -8,6 +8,7 @@
                 <group>
                     <field name="name" />
                     <field name="description" />
+                    <field name="category" />
                     <field name="total_cards" />
                 </group>
                 <h2>Cards</h2>
@@ -23,6 +24,7 @@
             <tree string="Decks">
                 <field name="name" />
                 <field name="description" />
+                <field name="category" />
                 <field name="total_cards" />
             </tree>
         </field>
