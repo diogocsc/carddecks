@@ -13,7 +13,7 @@ With this module you can configure decks of cards and play them
     """,
     'category': 'Services/Card Decks',
     'website': 'https://github.com/diogocsc/carddecks',
-    'depends' : ["base"],
+    'depends' : ["base", "contacts"],
     'data': [
         'security/carddecks_security.xml',
         'security/ir.model.access.csv',

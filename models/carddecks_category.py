@@ -10,6 +10,8 @@ class Category(models.Model):
     category_type = fields.Selection([('card', 'Card Category'),
                                       ('deck', 'Deck Category')],
                                      default='card')
+    partner = fields.Many2one("res.partner", "Creator")
+
 
 
 
