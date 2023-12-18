@@ -6,7 +6,7 @@
             <form string="Card">
                 <group>
                     <field name="cardText" />
-                    <field name="url" />
+                    <field name="url" widget="url" />
                     <field name="image" widget="image"/>
                     <field name="source" />
                     <field name="category" />

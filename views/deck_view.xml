@@ -9,7 +9,7 @@
                     <field name="name" />
                     <field name="description" />
                     <field name="category" />
-                    <field name="url" />
+                    <field name="url" widget="url" />
                     <field name="image" widget="image"/>
                     <field name="is_public" />
                     <field name="total_cards" />
@@ -28,7 +28,7 @@
                 <field name="name" />
                 <field name="description" />
                 <field name="category" />
-                <field name="url" />
+                <field name="url" widget="url"/>
                 <field name="image" widget="image"/>
                 <field name="is_public" />
                 <field name="total_cards" />
