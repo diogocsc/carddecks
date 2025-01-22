@@ -8,6 +8,7 @@
                     <field name="cardText" />
                     <field name="url" widget="url" />
                     <field name="image" widget="image"/>
+                    <field name="image_has_text_below" />
                     <field name="source" />
                     <field name="category" />
                     <field name="deck" />
@@ -23,6 +24,7 @@
                 <field name="cardText" />
                 <field name="url" />
                 <field name="image" widget="image"/>
+                <field name="image_has_text_below" />
                 <field name="source" />
                 <field name="category" />
                 <field name="deck" />

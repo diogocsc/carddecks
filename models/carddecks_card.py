@@ -13,6 +13,7 @@ class Card(models.Model):
     source = fields.Char("Card Source of Inspiration", translate=True)
     category = fields.Many2one("carddecks.category", "Category")
     deck = fields.Many2one("carddecks.deck", "Deck")
+    image_has_text_below = fields.Boolean(string="Display text below image")
 
     @api.depends("url")
     @api.onchange('url')
